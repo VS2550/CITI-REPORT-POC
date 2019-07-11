@@ -1,0 +1,15 @@
+#mainComp{
+height: -webkit-fill-available;
+background-color: #f2f2f2;
+}
+
+.logo{
+	min-height:46px;
+	height:46px;
+	background-image: url(.././assets/background.jpg);
+	background-size: contain;
+}
+.logo img{
+	height: 100%;
+}
+	

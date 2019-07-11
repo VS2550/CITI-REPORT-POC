@@ -1,0 +1,56 @@
+<div class="fluid-container" style="margin:10px;">
+	<div id="inputBox">
+	 <p>User Preference List</p>
+	<!-- <div class="row">
+	 <div *ngIf="reportList">
+		<ul *ngFor="let report of reportList">
+		<li><a (click)="showReport(report.reportObjectName)">{{report.reportObjectName}}</a></li>
+		<li><a (click)="downloadReport(report.reportObjectName)">Download PDF</a></li> 
+		</ul>
+	</div>
+	</div>  -->
+	 <div class="row">
+    <div class="col-md-4">
+      <p-dropdown [options]="reportList"  placeholder="Select" 
+      styleClass="Cdropdown" optionLabel="value" (onChange)="showReport($event)"></p-dropdown>
+    </div>
+	</div> 
+	
+	<!-- <div class="row">
+    <div class="col-md-4">
+      <p-dropdown [options]="reportList"  placeholder="Download" 
+      styleClass="Cdropdown" optionLabel="value" (onChange)="downloadReport($event)"></p-dropdown>
+    </div>
+	</div> -->
+	</div>
+
+
+
+
+<div id="resultBox">
+  <div *ngIf="cols" class="row">
+      <div class="col-md-12" style="color:cornflowerblue">
+        <h3 style="font-size: 0.75rem;">Report</h3>
+      </div>
+    <div class="col-md-12">
+      <p-table [columns]="cols" [value]="tableData">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns">
+                    {{col.header}}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+            <tr>
+                <td *ngFor="let col of columns">
+                        {{rowData[col.field]}}
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
+    </div>
+  </div>
+  </div>
+  
+  </div>

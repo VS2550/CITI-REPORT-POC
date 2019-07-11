@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.Cdropdown{
+    width: 100% !important;
+}
+.CmultiSelect{
+    width: 100% !important;
+    height: 75% !important;
+}
+
+.ui-inputtext{
+    width: 100% !important;
+}
+h1{
+    color: cornflowerblue !important;
+    font-size: 1.5rem !important;
+}

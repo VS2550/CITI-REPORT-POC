@@ -1,0 +1,26 @@
+.row{
+padding: 1.2em !important;
+padding-top: 0 !important;
+}
+div#inputBox{
+	width: 98%;
+	margin:auto;
+	background-color: white;
+}
+p{
+	font-family: serif;
+	color: cornflowerblue;
+	font-size: 23px;
+	padding-left: 15px;
+	
+}
+
+div#resultBox{
+	width: 98%;
+	margin:auto;
+	background-color: white;
+}
+
+a:active{
+	color: blue;
+}
